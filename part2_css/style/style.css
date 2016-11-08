@@ -1,0 +1,12 @@
+body{
+	text-align: center;
+}
+
+body .image-wrapper{
+		max-width: 600px;
+		margin: 0 auto;
+}
+
+body .image-wrapper img{
+	width: 100%;
+}

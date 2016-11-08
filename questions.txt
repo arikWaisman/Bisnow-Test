@@ -1,0 +1,12 @@
+Q1:What is the difference between a session and a cookie? How do they interact in a framework like Laravel? 
+
+In most basic terms sessions and cookies are bits of data that store things like login creds and a login session. the difference is that cookies are stored on the clients side, meaning on the browser/machine that visited a specific webpage. Whereas a session is stored on the server side, the machine/server that served the webpage. 
+
+In most situations cookies/sessions are use together. the data that is being stored is kept in a session on the server side but there is a cookie on the client side that stores the id of that session for reference.
+
+A framework like laravel will use sessions to store a users session (you only login in once and can navigate an site/app with out re-authenticating. Many times you can even visit other sites and come back to a site/app and still be logged in because of the session. You can set how long they last) which will be kept in a file on the server, but will have an ID that will map to a cookie on the client/browser side. 
+
+
+Q2: Where is the best place to do form validation, the client side (javascript) or server side? Why?
+
+Form validation ALWAYS has to happen on the server side no matter what!  This can be used in conjunction with client side form validation for a better user experience and faster feedback. You cant have just client side form validation and no server side form validation, but you can have server side validation without client side form validation (granted this is much slower but it is doable and safe). 
