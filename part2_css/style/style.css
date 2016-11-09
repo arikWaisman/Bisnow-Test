@@ -1,12 +1,117 @@
 body{
 	text-align: center;
+	background-color: #f8f9fa;
+	font-family: 'Pathway Gothic One', sans-serif;
 }
 
-body .image-wrapper{
-		max-width: 600px;
-		margin: 0 auto;
+.module-wrap{
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: white;
+	display: inline-block;
+	position: relative;
 }
 
-body .image-wrapper img{
-	width: 100%;
+.image-wrap {
+	width: 45%; /*332px/719px = .447  (widths measured from the screengrab)*/
+	float: left;
+	position: relative;
 }
+
+.image-wrap img{
+	width: 100%
+}
+
+.post-type{
+	position: absolute;
+	top: 0;	
+	right: 0;
+	color: white;
+	font-weight: 700;
+}
+
+.post-type .national{
+	background-color: #aaaaaa;
+	padding: 0 7.5px;
+}
+
+.post-type .hotel{
+	background-color: #78d1f0;
+	padding: 0 7.55px;
+}
+
+.outer-text-wrap{
+	width: 55%;
+	position: relative;
+	float: left;
+}
+
+.inner-text-wrap{
+	padding: 30px 15px 0;	
+
+}
+
+.inner-text-wrap h3 {
+	margin: 0;
+	font-size: 33px;
+	text-align: left;
+}
+
+.inner-text-wrap .meta-wrap{
+	font-family: arial;
+	font-size: 12px;
+	text-align: left;
+}
+
+.inner-text-wrap .meta-wrap .date{
+	font-weight: bold;
+	padding-right: 5px;
+	color: #666666;
+}
+
+.inner-text-wrap .meta-wrap .author{
+	padding-left: 5px;
+	color: #cad2e0;
+}
+
+.view-count{
+	float: left;
+	background-color: #39ff14;
+	color: white;
+	padding: 5px 12px;
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.plus{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: white;
+	background-color: #666666;
+	padding: 0px 8px 3px;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+
+@media (max-width: 568px){
+	.inner-text-wrap h3{
+		font-size: 20px;
+	}
+ }
+@media (max-width: 490px){
+	.view-count{
+		display: none;
+	}
+	.inner-text-wrap .meta-wrap .author,
+	.inner-text-wrap .meta-wrap .pipe{  
+		display: none;
+	}
+}
+
+@media (max-width: 338px){
+	.inner-text-wrap h3{
+		font-size: 18px;
+	}
+ }
